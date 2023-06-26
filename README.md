@@ -47,7 +47,8 @@ Crear tabla de products para guardar los productos, debera tener los siguientes 
 La tabla de orders para guardar los pedidos, debera tener los siguientes campos :
 
 - id (uuid, PK).
-- id_user(uuid)
+- id_user(uuid).
+- id_products(uuid).
 - fecha (DATE).
 - total (NUMBER NOT NULL).
 
