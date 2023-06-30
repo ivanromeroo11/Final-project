@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS products (
     brand TEXT NOT NULL,
     description TEXT NOT NULL,
     price DECIMAL NOT NULL,
-    quantity INT NOT NULL,
+    quantity TEXT NOT NULL,
     category TEXT NOT NULL,
     created_by uuid REFERENCES orders (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
