@@ -3,7 +3,7 @@
 INSERT INTO products (
 name, brand, description, price, category
 )VALUES(
-'Asus ROG MAXIMUS EXTREME', 'Asus', ' representa lo último en diseño de placa base para entusiastas.', '1299', 'Placas Base' 
+'Asus ROG MAXIMUS EXTREME', 'Asus', ' representa lo último en diseño de placa base para entusiastas.', '1299', 'Placas base' 
 );
 
 INSERT INTO products (
@@ -183,7 +183,7 @@ INSERT INTO products (
 INSERT INTO products (
     name, brand, description, price, category
 )VALUES(
-    'MSI GeForce RTX 4070 Ti VENTUS 3X OC 12GB GDDR6X DLSS3', 'MSI', 'Las GPU NVIDIA® GeForce RTX® serie 40 son más que rápidas para jugadores y creadores. Cuentan con la tecnología de la arquitectura ultra eficiente NVIDIA Ada Lovelace, que ofrece un salto espectacular tanto en rendimiento como en gráficos con tecnología de IA. Disfruta de mundos virtuales realistas con trazado de rayos y juegos con FPS ultra altos y la latencia más baja. Descubre nuevas y revolucionarias formas de crear contenido y una aceleración de flujo de trabajo sin precedentes.', '999.99'
+    'MSI GeForce RTX 4070 Ti VENTUS 3X OC 12GB GDDR6X DLSS3', 'MSI', 'Las GPU NVIDIA® GeForce RTX® serie 40 son más que rápidas para jugadores y creadores. Cuentan con la tecnología de la arquitectura ultra eficiente NVIDIA Ada Lovelace, que ofrece un salto espectacular tanto en rendimiento como en gráficos con tecnología de IA. Disfruta de mundos virtuales realistas con trazado de rayos y juegos con FPS ultra altos y la latencia más baja. Descubre nuevas y revolucionarias formas de crear contenido y una aceleración de flujo de trabajo sin precedentes.', '999.99', 'Tarjetas Gráficas'
 );
 
 INSERT INTO products (
@@ -207,6 +207,86 @@ INSERT INTO products (
 INSERT INTO products (
     name, brand, description, price, category
 )VALUES(
-    'ASUS ROG STRIX RTX 4090 OC White 24GB GDDR6X DLSS3', 'Asus', 'as GPU NVIDIA® GeForce RTX® serie 40 son más que rápidas para jugadores y creadores. Cuentan con la tecnología de la arquitectura ultra eficiente NVIDIA Ada Lovelace, que ofrece un salto espectacular tanto en rendimiento como en gráficos con tecnología de IA. Disfruta de mundos virtuales realistas con trazado de rayos y juegos con FPS ultra altos y la latencia más baja. Descubre nuevas y revolucionarias formas de crear contenido y una aceleración de flujo de trabajo sin precedentes.', '2449.99', 'Tarjetas Gráficas'
+    'ASUS ROG STRIX RTX 4090 OC White 24GB GDDR6X DLSS3', 'Asus', 'Las GPU NVIDIA® GeForce RTX® serie 40 son más que rápidas para jugadores y creadores. Cuentan con la tecnología de la arquitectura ultra eficiente NVIDIA Ada Lovelace, que ofrece un salto espectacular tanto en rendimiento como en gráficos con tecnología de IA. Disfruta de mundos virtuales realistas con trazado de rayos y juegos con FPS ultra altos y la latencia más baja. Descubre nuevas y revolucionarias formas de crear contenido y una aceleración de flujo de trabajo sin precedentes.', '2449.99', 'Tarjetas Gráficas'
 );
 
+-- INSERCIÓN PARA PRODUCTS PROCESADORES
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'AMD Ryzen 7 5800X 3.8GHz', 'AMD', 'El procesador que permite disfrutar una experiencia de juego de élite. Ocho núcleos optimizados para computadoras de juego con alto FPS.Bienvenido/a al mundo del procesador AMD Ryzen 7 5800X. Este dispositivo es una auténtica maravilla para los usuarios más exigentes en cuanto a rendimiento y velocidad de procesamiento se refiere.', '199.99', 'Procesadores'  
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'AMD Ryzen 7 7700 3.8/5.3 GHz Box', 'AMD', 'Cuando tu PC usa el procesador de escritorio más avanzado del mundo que existe para jugadores, te puedes concentrar en lo que verdaderamente importa: ganar en el campo de batalla digital. No importa si quieres jugar los últimos lanzamientos o revivir un clásico: los procesadores AMD Ryzen™ de la serie 7000 te dan una potencia de juego arrasadora con los núcleos “Zen 4” de alto rendimiento. Con hasta 16 núcleos, 32 subprocesos, velocidades turbo máximas de 5,7 GHz y memoria en el chip de hasta 144 MB, los procesadores AMD Ryzen serie 7000 ofrecen un rendimiento que lo cambia todo.', '350.00', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'AMD Ryzen 7 7800X3D 4.2 GHz/5 GHz', 'AMD', 'El procesador para juegos que domina el mundo de la mano de la tecnología AMD 3D V-Cache™, para ganar aún más rendimiento de juego. Sin importar la configuración ni la resolución que uses, lleva a tu equipo a la victoria con este maravilloso procesador para juegos. Disfruta, además, las ventajas de AMD 3D V-Cache™, la tecnología de punta que es sinónimo de latencia baja y mucho rendimiento de juego.', '449.99', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'AMD Ryzen 9 7950X3D 4.2 GHz/5.7 GHz', 'AMD', 'El mejor procesador para jugar, con tecnología AMD 3D V-Cache™ para ganar aún más rendimiento de juego. El procesador de 16 núcleos que es capaz de todo, con el rendimiento asombroso de AMD para los jugadores y creadores más exigentes. Disfruta, además, las ventajas de AMD 3D V-Cache™, la tecnología de punta que es sinónimo de latencia baja y mucho rendimiento de juego.', '749.99', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'AMD Ryzen 9 7950X 4.5 GHz Box sin Ventilador', 'AMD', 'Presentamos la serie AMD Ryzen™ 7000. Los procesadores para computadoras de escritorio más avanzados que existen para jugadores y creadores. Bienvenido a la nueva era del rendimiento. La serie AMD Ryzen 7000 saca a relucir la velocidad descomunal de “Zen 4” y su potencia pura para que los jugadores y creadores puedan procesar cualquier juego o flujo de trabajo que se cruce en su camino. Los procesadores de PC más avanzados del mundo para jugadores y creadores amplían el liderazgo de rendimiento de AMD para potenciar tu PC.', '649.99', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'AMD Ryzen 9 7900X3D 4.4GHz/5.6GHz', 'AMD', 'El procesador de escritorio que tiene una potencia tremenda para jugar y transmitir en directo, gracias a la tecnología AMD 3D V-Cache™, para ganar aún más rendimiento de juego. Con un procesador tan avanzado, puedes jugar, crear, transmitir en directo o hacer lo que quieras a lo grande. Disfruta, además, las ventajas de AMD 3D V-Cache™, la tecnología de punta que es sinónimo de latencia baja y mucho rendimiento de juego.', '600.00', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i7-13700K 3.4 GHz Box', 'Intel', 'Con un mayor número de núcleos, estos procesadores continúan utilizando la arquitectura híbrida de rendimiento de Intel para optimizar tus videojuegos, creación de contenido y productividad. Aprovecha el mejor ancho de banda de la industria de hasta 16 carriles PCIe 5.03 y memoria DDR5 de hasta 5600 MT/s.4 5 Potencia el rendimiento de tu CPU con una poderosa suite de herramientas de ajuste y overclocking. Disfruta de tus experiencias favoritas en hasta 4 pantallas simultáneas de 4K60 o hasta 8K60 de video HDR con una supresión dinámica de ruido.', '449.99', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i7-13700KF 3.4 GHz Box', 'Intel', 'Con un mayor número de núcleos, estos procesadores continúan utilizando la arquitectura híbrida de rendimiento de Intel para optimizar tus videojuegos, creación de contenido y productividad. Aprovecha el mejor ancho de banda de la industria de hasta 16 carriles PCIe 5.03 y memoria DDR5 de hasta 5600 MT/s.4 5 Potencia el rendimiento de tu CPU con una poderosa suite de herramientas de ajuste y overclocking. Disfruta de tus experiencias favoritas en hasta 4 pantallas simultáneas de 4K60 o hasta 8K60 de video HDR con una supresión dinámica de ruido.', '389.50', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i9-13900K 3 GHz Box', 'Intel', 'Con un mayor número de núcleos, estos procesadores continúan utilizando la arquitectura híbrida de rendimiento de Intel para optimizar tus videojuegos, creación de contenido y productividad. Aprovecha el mejor ancho de banda de la industria de hasta 16 carriles PCIe 5.03 y memoria DDR5 de hasta 5600 MT/s.4 5 Potencia el rendimiento de tu CPU con una poderosa suite de herramientas de ajuste y overclocking. Disfruta de tus experiencias favoritas en hasta 4 pantallas simultáneas de 4K60 o hasta 8K60 de video HDR con una supresión dinámica de ruido.', '589.90', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i9-13900 2 GHz/5.6 GHz', 'Intel', 'Nuestro nuevo procesador Intel® Core™ de 13? generación no solo es un chip, es un multiverso donde todos pueden tener todo y ser todo. Asciende en las tablas de clasificaciones, crea mundos y haz cuentas, todo a la vez. Consigue el rendimiento máximo de última generación para todo lo que haces con los procesadores Intel® Core™ de 13? generación.', '599.99', 'Procesadores'
+);
+
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i9-13900KF 3 GHz Box', 'Intel', 'Con un mayor número de núcleos, estos procesadores continúan utilizando la arquitectura híbrida de rendimiento de Intel para optimizar tus videojuegos, creación de contenido y productividad. Aprovecha el mejor ancho de banda de la industria de hasta 16 carriles PCIe 5.03 y memoria DDR5 de hasta 5600 MT/s.4 5 Potencia el rendimiento de tu CPU con una poderosa suite de herramientas de ajuste y overclocking. Disfruta de tus experiencias favoritas en hasta 4 pantallas simultáneas de 4K60 o hasta 8K60 de video HDR con una supresión dinámica de ruido.', '569.95', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i9-12900KS 3.4 GHz', 'Intel', 'El procesador de escritorio Intel® Core™ de 12.ª generación redefine el rendimiento de la arquitectura x86. Presentamos nuestra nueva arquitectura híbrida de rendimiento,1 que combina núcleos de rendimiento con núcleos eficientes para elevar los juegos, la productividad y la creación. Estos procesadores innovadores ayudan al sistema operativo a caracterizar de manera inteligente las cargas de trabajo para garantizar una ubicación óptima del núcleo para la ejecución y allanan el camino para futuros avances en el diseño de procesadores. Disfrute de la gama completa de las últimas innovaciones de plataforma, como la primera preparación PCIe 5.0 de la industria y la memoria DDR5.', '549.00', 'Procesadores'
+);
+
+INSERT INTO products (
+    name, brand, description, price, category
+)VALUES(
+    'Intel Core i9-10920X 3.50 GHz', 'Intel', 'Compatible con la memoria Intel® Optane?. La memoria Intel® Optane? es un nuevo y revolucionario tipo de memoria no volátil que se encuentra entre la memoria del sistema y el almacenamiento con el fin de acelerar el desempeño y la capacidad de respuesta del sistema. Al combinarse con el controlador de la Tecnología de almacenamiento Intel® Rapid, administra de manera fluida varios niveles de almacenamiento al mismo tiempo que presenta una sola unidad virtual al sistema operativo, lo cual permite que los datos de uso frecuente residan en el nivel de almacenamiento más rápido. La memoria Intel® Optane? requiere de configuración específica del hardware y el software.', '919.99', 'Procesadores'
+);

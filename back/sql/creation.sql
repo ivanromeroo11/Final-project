@@ -1,3 +1,9 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS products;
+DROP EXTENSION IF EXISTS "uuid-ossp";
+
+ 
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
@@ -28,3 +34,6 @@ CREATE TABLE IF NOT EXISTS products (
     category TEXT NOT NULL,
     created_by uuid REFERENCES orders (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+CREATE TYPE types AS ENUM
+
