@@ -28,7 +28,7 @@ const Login = () => {
 
     return (
         <section>
-            <h1>Login</h1>
+            <h2>Login</h2>
             <p>(Protected route)</p>
 
             <form onSubmit={handleSubmit(handleForm)}>

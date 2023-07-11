@@ -14,7 +14,7 @@ const Register = () => {
 
     return (
         <section>
-            <h1>Create account</h1>
+            <h2>Create account</h2>
             <p>(Unprotected)</p>
             <form onSubmit={handleSubmit(handleForm)}>
                 <label htmlFor="email">email</label>

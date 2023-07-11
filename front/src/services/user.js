@@ -1,4 +1,4 @@
-export const info = (client) => async() => {
+export const info = (client) => async () => {
     
     try {
         const { data: response } = await client.get( '/users' );

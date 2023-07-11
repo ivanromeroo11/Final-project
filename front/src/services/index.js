@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { login } from './auth';
 import { info } from './user';
+import { signup, signup } from './registerUser';
 
 
 const client = axios.create({
@@ -15,6 +16,10 @@ const auth = {
 const user = {
     info: info(client),
 };
+ 
+const signup ={
+    signup: signup(client),
+}
 
 
-export { auth, user };
+export { auth, user, signup };
