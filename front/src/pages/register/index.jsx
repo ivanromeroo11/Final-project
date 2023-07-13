@@ -1,13 +1,22 @@
 import { useForm } from 'react-hook-form';
 import { login } from '../../misc/templates';
-
+import { useMutation, useQueryClient } from 'react-query'
+import { auth } from '../../services'
 
 const Register = () => {
 
     const { register, formState, handleSubmit } = useForm();
 
+    const { mutate } = useMutation({
+        mutationFn: auth.login,
+        onSuccess: () => {
+
+        }
+    })
+
     const handleForm = (data) => {
         console.info("> form data: ", data);
+        mutate(data)
     };
 
     const { errors, email, username, password } = login;
