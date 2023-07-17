@@ -1,31 +1,45 @@
 import { useForm } from 'react-hook-form';
 import { login } from '../../misc/templates';
-import { useMutation, useQueryClient } from 'react-query'
-import { auth } from '../../services'
+import { useQuery } from 'react-query';
+import { useRegister } from '../../hooks'
+import { user } from '../../services';
+import { useEffect } from 'react';
+import { useLocation } from 'wouter'
+
+const useUser = () => {
+    const { data, isLoading } = useQuery({
+        queryKey: ['user'],
+        queryFn: user.info
+     })
+     return { data, isLoading }
+}
+
 
 const Register = () => {
 
     const { register, formState, handleSubmit } = useForm();
+   
 
-    const { mutate } = useMutation({
-        mutationFn: auth.login,
-        onSuccess: () => {
+    const doRegister = useRegister();
 
-        }
-    })
+    const [, setLocation] = useLocation();
 
-    const handleForm = (data) => {
-        console.info("> form data: ", data);
-        mutate(data)
-    };
+    const { data } = useUser();
 
+  
+     
+     useEffect(() => {
+        console.info('> user data: ', data)
+        data && setLocation('/login')
+     }, [data])
+   
     const { errors, email, username, password } = login;
 
     return (
         <section>
             <h2>Create account</h2>
-            <p>(Unprotected)</p>
-            <form onSubmit={handleSubmit(handleForm)}>
+           
+            <form onSubmit={handleSubmit(doRegister)}>
                 <label htmlFor="email">email</label>
                 <br />
                 <input {...{...email.props, ...register("email", email.validation) }}

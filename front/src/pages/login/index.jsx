@@ -3,18 +3,18 @@ import { login } from '../../misc/templates';
 import { useMutation, useQueryClient } from 'react-query';
 import { auth } from '../../services'
 
+
+
 const Login = () => {
 
     const { register, formState, handleSubmit } = useForm();
-    const queryClient = useQueryClient()
+    
 
     const { mutate } = useMutation({
         mutationFn: auth.login,
         onSuccess: (response) => {
         console.info('> mutation response: ', response)
-        if(response.success)
-         queryClient.invalidateQueries({ queryKey: ["user"] });
-
+      
         }
     })
 
@@ -23,13 +23,13 @@ const Login = () => {
         mutate(data)
     };
 
-    const { errors, email, username, password } = login
+    const { errors, email, password } = login
 
 
     return (
         <section>
             <h2>Login</h2>
-            <p>(Protected route)</p>
+          
 
             <form onSubmit={handleSubmit(handleForm)}>
                 <label htmlFor="email">email</label>
