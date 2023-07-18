@@ -1,18 +1,9 @@
 import { useForm } from 'react-hook-form';
 import { login } from '../../misc/templates';
-import { useQuery } from 'react-query';
-import { useRegister } from '../../hooks'
-import { user } from '../../services';
+import { useRegister, useUser } from '../../hooks'
 import { useEffect } from 'react';
 import { useLocation } from 'wouter'
 
-const useUser = () => {
-    const { data, isLoading } = useQuery({
-        queryKey: ['user'],
-        queryFn: user.info
-     })
-     return { data, isLoading }
-}
 
 
 const Register = () => {
