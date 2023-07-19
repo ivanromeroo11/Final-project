@@ -1,15 +1,15 @@
-const { hash } = require('simple-stateless-auth-library')
-const { createUser } = require('../../models/auth')
+const { hash, serialize } = require('simple-stateless-auth-library')
 const errors = require('../../misc/errors')
+const { selectUser } = require('../../models/auth')
 
 module.exports = (db) => async (req, res, next) => {
-    const { email, username, password } = req.body
-    
-    const encrypted = await hash.encrypt(password)
+    const { email, password } = req.body
 
-    const response = await createUser(await db)(email, username, encrypted)
+    const response = await selectUser(await db)(email, hash.compare(password))
 
-    if(!response.ok) return next(errors[500])
+    if(!response.ok) return next(errors[response.error_code || 500])
+
+    serialize(res, response.content)
 
     res.status(200).json({
         success: true,
