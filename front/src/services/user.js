@@ -2,7 +2,7 @@ export const info = (client) => async () => {
     
     try {
         const { data: response } = await client.get( '/users' );
-        console.info( '=> Info User Data: ', data );
+        console.info( '=> Info User Data: ', response );
         return response.data;
     } catch (error) {
         console.info( '==> Info User error:', error.message );
