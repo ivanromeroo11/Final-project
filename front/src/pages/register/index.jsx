@@ -50,8 +50,10 @@ const Register = () => {
                 <p>{errors[formState.errors?.password?.type]}</p>
 
                 <input type="submit" />
-            </form>
 
+               
+            </form>
+            
         </section>
     )
 };

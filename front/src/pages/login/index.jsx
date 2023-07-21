@@ -1,27 +1,27 @@
 import { useForm } from 'react-hook-form';
 import { login } from '../../misc/templates';
-import { useMutation, useQueryClient } from 'react-query';
-import { auth } from '../../services'
-
+import { useRegister, useUser } from '../../hooks'
+import { useEffect } from 'react';
+import { useLocation } from 'wouter'
 
 
 const Login = () => {
 
     const { register, formState, handleSubmit } = useForm();
-    
+   
 
-    const { mutate } = useMutation({
-        mutationFn: auth.login,
-        onSuccess: (response) => {
-        console.info('> mutation response: ', response)
-      
-        }
-    })
+    const doRegister = useRegister();
 
-    const handleForm = (data) => {
-        console.info("> form data: ", data);
-        mutate(data)
-    };
+    const [, setLocation] = useLocation();
+
+    const { data } = useUser();
+
+  
+     
+     useEffect(() => {
+        console.info('> user data: ', data)
+        data && setLocation('/panel')
+     }, [data])
 
     const { errors, email, password } = login
 
@@ -31,7 +31,7 @@ const Login = () => {
             <h2>Login</h2>
           
 
-            <form onSubmit={handleSubmit(handleForm)}>
+            <form onSubmit={handleSubmit(doRegister)}>
                 <label htmlFor="email">email</label>
                 <br />
                 <input
